@@ -52,3 +52,8 @@ extension StoryboardInitializable where Self : TempViewController {
         return "Temp"
     }
 }
+extension StoryboardInitializable where Self : CardInfoViewController {
+    static var storyboardName: String {
+        return "CardInfo"
+    }
+}

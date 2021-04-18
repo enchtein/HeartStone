@@ -27,6 +27,9 @@
 		7D2D6083262C734000FF71B9 /* CardsTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D6082262C734000FF71B9 /* CardsTarget.swift */; };
 		7D2D6087262C76DF00FF71B9 /* CardsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D6086262C76DF00FF71B9 /* CardsResponse.swift */; };
 		7D2D608A262C778C00FF71B9 /* CardsAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D6089262C778C00FF71B9 /* CardsAdapter.swift */; };
+		7D2D608F262CB33E00FF71B9 /* AllClasses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D608E262CB33E00FF71B9 /* AllClasses.swift */; };
+		7D2D6093262CB4E400FF71B9 /* CardInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D2D6092262CB4E400FF71B9 /* CardInfo.storyboard */; };
+		7D2D6096262CB50700FF71B9 /* CardInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D2D6095262CB50700FF71B9 /* CardInfoViewController.swift */; };
 		A43CC43EA5BF833C0EEC00E0 /* Pods_HeartStone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8010AC47F5C63DE853EFC409 /* Pods_HeartStone.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +58,9 @@
 		7D2D6082262C734000FF71B9 /* CardsTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsTarget.swift; sourceTree = "<group>"; };
 		7D2D6086262C76DF00FF71B9 /* CardsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsResponse.swift; sourceTree = "<group>"; };
 		7D2D6089262C778C00FF71B9 /* CardsAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsAdapter.swift; sourceTree = "<group>"; };
+		7D2D608E262CB33E00FF71B9 /* AllClasses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllClasses.swift; sourceTree = "<group>"; };
+		7D2D6092262CB4E400FF71B9 /* CardInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CardInfo.storyboard; sourceTree = "<group>"; };
+		7D2D6095262CB50700FF71B9 /* CardInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardInfoViewController.swift; sourceTree = "<group>"; };
 		8010AC47F5C63DE853EFC409 /* Pods_HeartStone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HeartStone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -108,6 +114,7 @@
 		7D2D602C262C496600FF71B9 /* HeartStone */ = {
 			isa = PBXGroup;
 			children = (
+				7D2D6091262CB4CC00FF71B9 /* CardInfo */,
 				7D2D6076262C714800FF71B9 /* Network */,
 				7D2D606E262C6AEB00FF71B9 /* Enums */,
 				7D2D6067262C66D400FF71B9 /* Temp */,
@@ -183,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				7D2D606F262C6AFB00FF71B9 /* MainOptions.swift */,
+				7D2D608E262CB33E00FF71B9 /* AllClasses.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -219,6 +227,15 @@
 				7D2D6086262C76DF00FF71B9 /* CardsResponse.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		7D2D6091262CB4CC00FF71B9 /* CardInfo */ = {
+			isa = PBXGroup;
+			children = (
+				7D2D6092262CB4E400FF71B9 /* CardInfo.storyboard */,
+				7D2D6095262CB50700FF71B9 /* CardInfoViewController.swift */,
+			);
+			path = CardInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2D6093262CB4E400FF71B9 /* CardInfo.storyboard in Resources */,
 				7D2D6047262C49BF00FF71B9 /* Sidemenu.storyboard in Resources */,
 				7D2D603A262C496900FF71B9 /* LaunchScreen.storyboard in Resources */,
 				7D2D6037262C496900FF71B9 /* Assets.xcassets in Resources */,
@@ -339,10 +357,12 @@
 			files = (
 				7D2D6056262C528C00FF71B9 /* AppCoordinator.swift in Sources */,
 				7D2D6050262C4B0C00FF71B9 /* SideMenuTableViewCell.swift in Sources */,
+				7D2D608F262CB33E00FF71B9 /* AllClasses.swift in Sources */,
 				7D2D605C262C544800FF71B9 /* StoryboardInitializable.swift in Sources */,
 				7D2D6087262C76DF00FF71B9 /* CardsResponse.swift in Sources */,
 				7D2D604C262C4A8000FF71B9 /* SideMenuViewController.swift in Sources */,
 				7D2D605F262C55F100FF71B9 /* SideMenuMainViewController.swift in Sources */,
+				7D2D6096262CB50700FF71B9 /* CardInfoViewController.swift in Sources */,
 				7D2D6070262C6AFB00FF71B9 /* MainOptions.swift in Sources */,
 				7D2D606C262C66F500FF71B9 /* TempViewController.swift in Sources */,
 				7D2D6032262C496600FF71B9 /* ViewController.swift in Sources */,

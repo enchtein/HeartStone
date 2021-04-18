@@ -23,6 +23,8 @@ enum MainOptions: String, CaseIterable {
   
   var viewController: UIViewController {
     switch self {
+    case .first:
+      return CardInfoViewController.createFromStoryboard()
 //    case .support: return SupportViewController.createFromStoryboard()
 //    case .workHours: return WorkHoursViewController.createFromStoryboard()
 //    case .driverAvailability: return DriverAvailabilityMainViewController.createFromStoryboard()
