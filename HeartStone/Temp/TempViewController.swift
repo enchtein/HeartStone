@@ -6,13 +6,17 @@
 //
 
 import UIKit
+import PromiseKit
 
 class TempViewController: UIViewController, StoryboardInitializable {
+  
+  private var getResult: CardsResponse?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+      self.getAllCards()
     }
     
 
@@ -26,4 +30,13 @@ class TempViewController: UIViewController, StoryboardInitializable {
     }
     */
 
+  func getAllCards() {
+    firstly { CardsAdapter.shared.getAllCards() }.done {
+      [weak self] (response) in
+      guard let self = self else { return }
+      self.getResult = response
+    } .catch { (error) in
+      debugPrint(error.localizedDescription)
+    }
+  }
 }

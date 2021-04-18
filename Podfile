@@ -7,4 +7,6 @@ target 'HeartStone' do
 
   # Pods for HeartStone
 pod 'SideMenu', '~> 6.5'
+pod 'Moya'
+pod "PromiseKit", "~> 6.8"
 end

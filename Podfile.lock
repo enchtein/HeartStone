@@ -1,16 +1,38 @@
 PODS:
+  - Alamofire (5.4.2)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
   - SideMenu (6.5.0)
 
 DEPENDENCIES:
+  - Moya
+  - PromiseKit (~> 6.8)
   - SideMenu (~> 6.5)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - Moya
+    - PromiseKit
     - SideMenu
 
 SPEC CHECKSUMS:
+  Alamofire: bfbc4c2fe5909b1d94fb4ef2277c6b3727ef5dae
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 08da0f26eac755b8fe3cd8302d347139e88a129c
+PODFILE CHECKSUM: 6734b938f401d70b91c8a372a611c69789afacdf
 
 COCOAPODS: 1.10.1
